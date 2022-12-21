@@ -1,0 +1,32 @@
+.image-results {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1%;
+}
+
+.image-details {
+    padding-left: 10px;
+    padding-right: 25px;
+    padding-bottom: 15px;
+}
+
+.image-details img {
+    width: 5vw;
+    height: 5vw;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+}
+
+// .image-details img:hover {
+//     transform: scale(6);
+// }
+
+.image-details h5 {
+    font-family: 'Typewriter';
+    color: #fff;
+    font-size: 0.9rem;
+    text-align: center;
+}

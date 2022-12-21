@@ -1,0 +1,79 @@
+:root{
+  --primary: #105bd8;
+  --secondary: #dd361c;
+  --background: #d6d7d9;
+  --s: 10px;
+}
+
+@font-face {
+  font-family: "Nasa";   /*Can be any text*/
+  src: local("Nasa"),
+    url("./components/Fonts/Nasa.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "LMS";   /*Can be any text*/
+  src: local("LMS"),
+    url("./components/Fonts/LMS.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Typewriter";   /*Can be any text*/
+  src: local("Typewriter"),
+    url("./components/Fonts/Typewriter.ttf") format("truetype");
+}
+
+.primary{
+  color: var(--primary);
+}
+
+.secondary{
+  color: var(--secondary);
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+p{
+  font-size: 1.2rem;
+}
+
+
+@media screen and (max-width:768px) {
+  h1{
+    font-size: 2.1rem;
+    line-height: 1.2;
+  }
+  
+  h2{
+    font-size: 1.5rem;
+    line-height: 1.2;
+  }
+  
+  h5{
+    font-size: 1.1rem;
+    line-height: 1.2;
+  }
+  
+  p{
+    font-size: 1rem;
+  }
+
+  .btn{
+    width: 100%;
+    margin: 1rem 0;
+  }
+
+  input{
+    width: 100%;
+  }
+
+}
+
+body {
+  margin: 0;
+}

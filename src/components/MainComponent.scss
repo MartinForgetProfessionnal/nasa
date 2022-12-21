@@ -1,0 +1,284 @@
+.mainContainer {
+  position: relative;
+  top: 120px;
+  display: grid;
+  grid-auto-flow: row dense;
+  grid-template-columns: repeat(6, 1fr);
+  grid-auto-rows: minmax(100px, auto);
+  grid-template-areas:
+    "lc lc im im im im"
+    "lc lc im im im im"
+    "lc lc im im im im";
+  min-height: 1210px;
+  height: 100%;
+  border-bottom: 6px solid var(--primary);
+}
+
+.leftContainer {
+  position: relative;
+  padding-left: 190px;
+  padding-top: 250px;
+  grid-area: lc;
+  background-color: black;
+  min-height: 100%;
+}
+
+.redPlanet{
+  position: fixed;
+  top: 260px;
+  left: 140px;
+  font-family: 'Typewriter';
+  font-size: 7rem;
+  color: #fff;
+}
+
+.inputCam {
+  padding-left: 100px;
+  padding-top: 180px;
+  grid-area: ic;
+  align-self: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.inputCam select{
+  height: 60px;
+  font-family: 'Typewriter';
+  font-size: 1.4rem;
+  text-align: center;
+  background-color: #fff;
+  border: 4px solid var(--secondary);
+}
+
+.inputDate {
+  padding-right: 170px;
+  padding-left: 40px;
+  padding-top: 180px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-self: center;
+}
+
+.inputDate input{
+  height: 60px;
+  font-family: 'Typewriter';
+  font-size: 1.4rem;
+  width: 210px;
+  text-align: center;
+  background-color: #fff;
+  border: 4px solid var(--secondary);
+}
+
+.rightContainer {
+  background-image: url('./images//space.gif');
+  grid-area: im;
+  border-left: 2px solid var(--primary);
+  min-height: 100%;
+  height:fit-content;
+}
+
+.image-results{
+  margin: 0 60px;
+  z-index: 99;
+}
+
+.image-results img:hover{
+  transform: scale(4.2);
+  align-self: center;
+}
+
+.select-form{
+display: inline-flex;
+}
+
+.btnMain{
+  display: inline-flex;
+  flex-direction: column;
+}
+
+.flip-card {
+  display: flex;
+  position: fixed;
+  justify-content: center;
+  align-items: center;
+  align-self: center;
+  padding-top: 100px;
+  margin: 0 auto;
+  cursor: pointer;
+  grid-area: card;
+  background-color: transparent;
+  width: 450px;
+  height: 450px;
+  perspective: 1000px;
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front,
+.flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.flip-card-front {
+  color: black;
+}
+
+.flip-card-back {
+  font-family: 'Typewriter';
+  font-size: 2.5rem;
+  padding: 30px;
+  text-align: justify;
+  background-color: black;
+  color: #fff;
+  transform: rotateY(180deg);
+}
+
+.flip-card-back h1 {
+  font-family: 'Typewriter';
+  font-size: 3rem;
+  text-align: center;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.buttons {
+  text-align: center;
+  border-radius: 30px;
+  padding-right: 20px;
+}
+
+$red: var(--secondary);
+$dark: #fff;
+$borderW: 5px;
+
+.blob-btn {
+  $numOfBlobs: 4;
+  z-index: 1;
+  position: relative;
+  padding: 20px 46px;
+  margin-bottom: 30px;
+  text-align: center;
+  text-transform: uppercase;
+  color: $red;
+  font-family: 'Nasa';
+  text-shadow: -1px 0 black, 0 1px black;
+  font-size: 22px;
+  font-weight: bold;
+  background-color: transparent;
+  outline: none;
+  border: none;
+  transition: color 0.5s;
+  cursor: pointer;
+  border-radius: 30px;
+
+  &:before {
+    content: "";
+    z-index: 1;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    border: $borderW solid $red;
+    border-radius: 30px;
+  }
+
+  &:after {
+    content: "";
+    z-index: -2;
+    position: absolute;
+    left: $borderW*1.5;
+    top: $borderW*1.5;
+    width: 100%;
+    height: 100%;
+    transition: all 0.3s 0.2s;
+    border-radius: 30px;
+  }
+
+  &:hover {
+    color: $dark;
+    border-radius: 30px;
+
+    &:after {
+      transition: all 0.3s;
+      left: 0;
+      top: 0;
+      border-radius: 30px;
+    }
+  }
+
+  &__inner {
+    z-index: -1;
+    overflow: hidden;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 30px;
+    background: #ffffff;
+  }
+
+  &__blobs {
+    position: relative;
+    display: block;
+    height: 100%;
+    filter: url('#goo');
+  }
+
+  &__blob {
+    position: absolute;
+    top: $borderW;
+    width: 100% / $numOfBlobs;
+    height: 100%;
+    background: $red;
+    border-radius: 100%;
+    transform: translate3d(0, 150%, 0) scale(1.7);
+    transition: transform 0.45s;
+
+    @supports(filter: url('#goo')) {
+      transform: translate3d(0, 150%, 0) scale(1.4);
+    }
+
+    @for $i from 1 through $numOfBlobs {
+      &:nth-child(#{$i}) {
+        left: ($i - 1) * (120% / $numOfBlobs);
+        transition-delay: ($i - 1) * 0.08s;
+      }
+    }
+
+    .blob-btn:hover & {
+      transform: translateZ(0) scale(1.7);
+
+      @supports(filter: url('#goo')) {
+        transform: translateZ(0) scale(1.4);
+      }
+    }
+  }
+
+}
