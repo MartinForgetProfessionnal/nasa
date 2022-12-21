@@ -37,11 +37,11 @@ In my project, i've used APOD and MARS ROVER PHOTOS(focused on Curiosity. I'll p
 
 I've worked with different dependencies such as :
 
-*"framer-motion": "^7.9.1"
-*"jquery": "^3.6.3"
-*"node-sass": "^7.0.3"
-*"react-router-dom": "^6.4.5"
-*"sweetalert2": "^11.6.16"
+* "framer-motion": "^7.9.1"
+* "jquery": "^3.6.3"
+* "node-sass": "^7.0.3"
+* "react-router-dom": "^6.4.5"
+* "sweetalert2": "^11.6.16"
 
 All pages are linked with react-router-dom. 
 Some are still under construction.
@@ -50,7 +50,7 @@ Some are still under construction.
 
 I imported fonts i found on the net :
 
-*Typewriter 
-*Nasa 
-*LMS
+* Typewriter 
+* Nasa 
+* LMS
 
