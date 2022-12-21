@@ -1,12 +1,16 @@
-# Getting Started with Create React App
+# My NASA API app
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project was meant to be a school project, but i pushed a little bit the limit to learn more stuff and have fun.
 
-## Available Scripts
+## To start the project
 
-In the project directory, you can run:
+### `open with Visual Studio Code`
+
+To view the project, you just need to open its folder with Visual Studio Code.
 
 ### `npm start`
+
+In the terminal, just type npm start.
 
 Runs the app in the development mode.\
 Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
@@ -14,57 +18,39 @@ Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 The page will reload when you make changes.\
 You may also see any lint errors in the console.
 
-### `npm test`
+## Project Description
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+This project is using 2 different queries for pictures, medias and diverse informations from 2 Nasa's APIs. 
+The first one is used to show the daily picture published by the NASA and its description. 
+The second one, i managed to build a dynamic querie with inputs with it. That way, the user can choose the date and the camera from the Curiosity rover which is actively exploring and gatherig datas on Mars.
 
-### `npm run build`
+## NASA API
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+To see those free enjoyable NASA APIs just follow the link [https://api.nasa.gov/](https://api.nasa.gov/). 
+In my project, i've used APOD and MARS ROVER PHOTOS(focused on Curiosity. I'll possibly implement my work with other rovers later)
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Languages
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+**HTML - SCSS - JAVASCRIPT**
 
-### `npm run eject`
+### Dependencies
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+I worked with different dependencies such as :
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+"framer-motion": "^7.9.1"
+"jquery": "^3.6.3"
+"node-sass": "^7.0.3"
+"react-router-dom": "^6.4.5"
+"sweetalert2": "^11.6.16"
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+All pages are linked with react-router-dom. 
+Some are still under construction.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+### Fonts
 
-## Learn More
+I imported fonts i found on the net :
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+'Typewriter'
+'Nasa'
+'LMS'
 
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
