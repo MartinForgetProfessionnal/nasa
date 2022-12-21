@@ -33,9 +33,9 @@ In my project, i've used APOD and MARS ROVER PHOTOS(focused on Curiosity. I'll p
 
 **HTML - SCSS - JAVASCRIPT**
 
-### Dependencies
+## Dependencies
 
-I worked with different dependencies such as :
+I've worked with different dependencies such as :
 
 "framer-motion": "^7.9.1"
 "jquery": "^3.6.3"
@@ -46,7 +46,7 @@ I worked with different dependencies such as :
 All pages are linked with react-router-dom. 
 Some are still under construction.
 
-### Fonts
+## Fonts
 
 I imported fonts i found on the net :
 
