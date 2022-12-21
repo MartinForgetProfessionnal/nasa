@@ -50,7 +50,5 @@ Some are still under construction.
 
 I imported fonts i found on the net :
 
-'Typewriter'
-'Nasa'
-'LMS'
+Typewriter - Nasa - LMS
 
