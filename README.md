@@ -1,6 +1,6 @@
 # My NASA API app
 
-This project was meant to be a school project, but i pushed a little bit the limit to learn more stuff and have fun.
+This project was meant to be a school project, but i pushed a little bit the limits to learn more stuff and have fun.
 
 ## To start the project
 
