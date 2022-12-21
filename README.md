@@ -31,7 +31,9 @@ In my project, i've used APOD and MARS ROVER PHOTOS(focused on Curiosity. I'll p
 
 ## Languages
 
-**HTML - SCSS - JAVASCRIPT**
+* HTML 
+* SCSS 
+* JAVASCRIPT**
 
 ## Dependencies
 
