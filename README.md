@@ -46,7 +46,7 @@ I've worked with different dependencies such as :
 * "sweetalert2": "^11.6.16"
 
 All pages are linked with react-router-dom. 
-Some are still under construction.
+Some are still under construction and it is not yet fully responsive.
 
 ## Fonts
 
