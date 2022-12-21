@@ -12,7 +12,7 @@ To view the project, you just need to open its folder with Visual Studio Code.
 
 In the terminal, just type npm start.
 
-Runs the app in the development mode.\
+It runs the app in the development mode.\
 Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
 The page will reload when you make changes.\
