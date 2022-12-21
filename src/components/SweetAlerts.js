@@ -12,7 +12,7 @@ export default class SweetAlerts extends Component {
             icon: 'info',
             iconColor: '#fff',
             width: 600,
-            text: 'This project is using 2 different queries for pictures, medias and diverse informations from 2 Nasa\'s APIs. The first one is used to show the daily picture published by the NASA and its description. The second one, i managed to build a dynamic querie with inputs with it. That way, the user can choose the date and the camera from the Curiosity rover which is actively exploring and gatherig datas on Mars.',
+            text: 'This project is using 2 different queries for pictures, medias and diverse informations from 2 Nasa\'s APIs. The first one is used to show the daily picture published by the NASA and its description. With the second one, i managed to build a dynamic querie with inputs. That way, the user can choose the date and the camera from the Curiosity rover, which is actively exploring and gatherig datas on Mars, to return images it took at a specific date.',
             confirmButtonText: 'LET\'S GO!',
             confirmButtonColor: 'var(--secondary)',
             background: 'var(--primary)',
